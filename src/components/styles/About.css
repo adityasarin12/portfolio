@@ -1,0 +1,103 @@
+.about-section {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 100px 0;
+
+  position: relative;
+  z-index: 10;
+}
+
+.about-me {
+  width: var(--cWidth);
+  max-width: 800px;
+  position: relative;
+  z-index: 30; /* ensure about text stays above scene */
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: 5%;
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  line-height: 2;
+  font-weight: 400;
+}
+
+.about-me h2 {
+  font-size: 70px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.about-me h2 span {
+  color: var(--accentColor);
+}
+
+.about-me p {
+  color: #eae5ec;
+  font-size: 1.2rem;
+  line-height: 2;
+  letter-spacing: 0.5px;
+  text-align: left;
+  max-width: 900px;
+}
+
+.about-section {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-me {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 40px);
+    font-size: 1rem;
+  }
+}
+
+/* TABLET */
+
+@media only screen and (max-width: 1024px) {
+
+  .about-section {
+    min-height: auto;
+    padding: 80px 0;
+  }
+
+  .about-me h2 {
+    font-size: 50px;
+  }
+
+  .about-me p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+  }
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 768px) {
+
+  .about-section {
+    padding: 60px 0;
+  }
+
+  .about-me {
+    width: calc(100% - 40px);
+  }
+
+  .about-me h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .about-me p {
+    font-size: 1rem;
+    line-height: 1.8;
+
+    text-align: left;
+  }
+}

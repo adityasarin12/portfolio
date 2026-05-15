@@ -1,0 +1,137 @@
+.career-section {
+  width: 100%;
+  padding: 140px 0 220px; /* larger bottom padding to separate from Projects */
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 15;
+}
+
+.career-header {
+  width: var(--cWidth);
+  max-width: var(--cMaxWidth);
+  margin: 0 auto 50px;
+}
+
+.career-header h2 {
+  font-size: 70px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.career-header h2 span {
+  color: var(--accentColor);
+}
+
+.career-container {
+  width: var(--cWidth);
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.career-left {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+
+.career-item {
+  padding: 36px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.career-item h3 {
+  font-size: 2.2rem;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.career-item h4 {
+  margin: 0 0 12px;
+  color: #2dd4bf;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.career-item-period {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #adacac;
+  font-size: 0.98rem;
+}
+
+.career-item p,
+.career-overview p {
+  margin: 0;
+  color: #d4d4d4;
+  line-height: 1.95;
+  font-size: 1.08rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.career-overview {
+  padding: 32px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+}
+
+.career-line {
+  /* timeline visuals removed per request; keep gutter spacing */
+  width: 80px;
+}
+
+.career-line::before,
+.career-dot {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .career-header {
+    text-align: center;
+  }
+
+  .career-container {
+    flex-direction: column;
+  }
+
+  .career-line {
+    display: none;
+  }
+
+  .career-item,
+  .career-overview {
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .career-section {
+    padding: 80px 0;
+  }
+
+  .career-header h2 {
+    font-size: 40px;
+  }
+
+  .career-item h3 {
+    font-size: 1.5rem;
+  }
+
+  .career-item p,
+  .career-overview p {
+    font-size: 0.98rem;
+    line-height: 1.8;
+  }
+}
