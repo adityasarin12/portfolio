@@ -2,6 +2,7 @@
 
 This repository contains the source code for my personal 3D portfolio built with React, TypeScript, Three.js, React Three Fiber, and GSAP.
 Available on vercel @ https://portfolio-indol-alpha-eoabzgp8h1.vercel.app/
+
 The portfolio showcases:
 - AI/ML projects
 - Generative AI work
